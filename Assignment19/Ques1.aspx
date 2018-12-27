@@ -16,11 +16,39 @@
         <asp:Label ID="Label2" runat="server" Text="Customer Address"></asp:Label>
         <asp:TextBox ID="CusAddId" runat="server"></asp:TextBox>
         <asp:Label ID="Label3" runat="server" Text="DOB"></asp:Label>
-        <asp:TextBox ID="DobId" runat="server"></asp:TextBox>
+        <input id="DobId" type="date" runat="server" />
         <asp:Label ID="Label4" runat="server" Text="Salary"></asp:Label>
         <asp:TextBox ID="salId" runat="server"></asp:TextBox>
         <asp:Button ID="InsertRec" runat="server" Text="Insert a record" OnClick="InsertRec_Click"/>
+        
         <hr />
+        <h3>Question 1(c) & 1(d) & 1(e) & 1(f)</h3>
+        <asp:TextBox ID="txtCustId" runat="server"></asp:TextBox>
+        <asp:Button ID="btnDispByCustId" runat="server" Text="Display" OnClick="btnDispByCustId_Click"/>
+        <asp:Button ID="btnDispAllId" runat="server" Text="Display All" OnClick="btnDispAllId_Click"/>
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" OnRowEditing="GridView1_RowEditing" OnRowCancelingEdit="GridView1_RowCancelingEdit"
+            OnRowUpdating="GridView1_RowUpdating" OnRowDeleting="GridView1_RowDeleting">
+            <Columns>
+                <asp:BoundField DataField="CustId" HeaderText="Customer Id" ReadOnly/>
+                <asp:BoundField DataField="CustName" HeaderText="Customer Name" />
+                <asp:BoundField DataField="CustAddr" HeaderText="Address" />
+                <%--<asp:BoundField DataField="Dob" HeaderText="Date of Birth" />--%>
+                <asp:TemplateField HeaderText="Date of Birth">
+                    <ItemTemplate>
+                        <asp:Label runat="server" ID="lblDobId"
+                            Text='<%#DataBinder.Eval(Container.DataItem, "Dob").ToString()%>'>
+                        </asp:Label>
+                    </ItemTemplate>
+                    <EditItemTemplate>
+                        <asp:TextBox ID="dtDobId" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "Dob").ToString()%>' TextMode="Date"></asp:TextBox>
+                    </EditItemTemplate>
+                </asp:TemplateField>
+                <asp:BoundField DataField="Salary" HeaderText="Salary" />
+                <asp:CommandField ShowEditButton="true" />
+                <asp:CommandField ShowDeleteButton="true" />
+            </Columns>
+            
+        </asp:GridView>
     </div>
     
 </asp:Content>
