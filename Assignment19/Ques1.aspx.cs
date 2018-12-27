@@ -50,6 +50,11 @@ namespace Assignment19
             sqlCmd.ExecuteNonQuery();
             sqlCon.Close();
             Func_PopUp("The record has been created");
+            CusNameId.Text = "";
+            CusAddId.Text = "";
+            DobId.Value = "";
+            salId.Text = "";
+            bindGrid(CustIdHolder);
         }
 
         protected void btnDispByCustId_Click(object sender, EventArgs e)
