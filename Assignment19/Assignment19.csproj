@@ -143,6 +143,8 @@
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Ques1.aspx" />
+    <Content Include="Ques2.aspx" />
+    <Content Include="Ques4.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -211,6 +213,20 @@
     </Compile>
     <Compile Include="Ques1.aspx.designer.cs">
       <DependentUpon>Ques1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ques2.aspx.cs">
+      <DependentUpon>Ques2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ques2.aspx.designer.cs">
+      <DependentUpon>Ques2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ques4.aspx.cs">
+      <DependentUpon>Ques4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ques4.aspx.designer.cs">
+      <DependentUpon>Ques4.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

@@ -1,0 +1,50 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CustId" type="xs:int" minOccurs="0" />
+                <xs:element name="CustName" type="xs:string" minOccurs="0" />
+                <xs:element name="CustAddr" type="xs:string" minOccurs="0" />
+                <xs:element name="Dob" type="xs:string" minOccurs="0" />
+                <xs:element name="Salary" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <CustId>1</CustId>
+    <CustName>Stannis</CustName>
+    <CustAddr>KK Nagar</CustAddr>
+    <Dob>2017-10-11</Dob>
+    <Salary>25500</Salary>
+  </Table>
+  <Table>
+    <CustId>2</CustId>
+    <CustName>Robert</CustName>
+    <CustAddr>Bangalore</CustAddr>
+    <Dob>1988-01-13</Dob>
+    <Salary>24500</Salary>
+  </Table>
+  <Table>
+    <CustId>3</CustId>
+    <CustName>Jofery</CustName>
+    <CustAddr>Chennai</CustAddr>
+    <Dob>2018-12-12</Dob>
+    <Salary>12000</Salary>
+  </Table>
+  <Table>
+    <CustId>4</CustId>
+    <CustName>Tommen</CustName>
+    <CustAddr>Velachery</CustAddr>
+    <Dob>2018-12-11</Dob>
+    <Salary>20000</Salary>
+  </Table>
+</NewDataSet>

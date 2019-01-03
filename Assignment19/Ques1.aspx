@@ -9,7 +9,7 @@
         <asp:Button ID="CreateTableBtn" runat="server" Text="Create Customer Table" OnClick="CreateTableBtn_Click"/>
 
         <hr />
-        <h3>Question 1(b)</h3>
+        <h3>Question [1(b),3(c)]</h3>
         <h5>Insert a new record into the table</h5>
         <asp:Label ID="Label1" runat="server" Text="Customer Name"></asp:Label>
         <asp:TextBox ID="CusNameId" runat="server"></asp:TextBox>
@@ -22,7 +22,7 @@
         <asp:Button ID="InsertRec" runat="server" Text="Insert a record" OnClick="InsertRec_Click"/>
         
         <hr />
-        <h3>Question 1(c) & 1(d) & 1(e) & 1(f)</h3>
+        <h3>Question [1(c),3(a)] & [1(d),3(b)] & [1(e),3(d)] & [1(f),3(e)]</h3>
         <asp:TextBox ID="txtCustId" runat="server"></asp:TextBox>
         <asp:Button ID="btnDispByCustId" runat="server" Text="Display" OnClick="btnDispByCustId_Click"/>
         <asp:Button ID="btnDispAllId" runat="server" Text="Display All" OnClick="btnDispAllId_Click"/>
